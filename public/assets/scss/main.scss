@@ -1,0 +1,111 @@
+@charset "UTF-8";
+// ========= 客製化區 =========
+@import 'custom_style/variables';
+@import 'custom_style/font';
+// ========= base =========
+@import 'base/reset'; 
+@import 'base/dophlex'; 
+// ========= element =========
+@import 'element/btn';
+@import 'element/nav';
+@import 'element/unslider';
+// ========= layout =========
+@import 'layout/header';
+@import 'layout/2';
+@import 'layout/3';
+@import 'layout/4';
+@import 'layout/5';
+@import 'layout/6';
+@import 'layout/footer';
+
+* {
+	-webkit-overflow-scrolling: touch;
+}
+
+body {
+	font-family: $p400;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+
+section, header {
+	position: relative;
+	min-height: 100vh;
+	height: auto;
+	width: 100%;
+
+	.content {
+		position: relative;
+		width: 100%;
+		padding: 5% 2.5%;
+		max-width: 1100px;
+		margin: auto;
+	}
+
+	& > .bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+	}
+
+	.bg-line {
+		width: 50%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		bottom: 0;
+		transform: translateY(60%);
+		z-index: 5;
+	}
+}
+
+
+[class*="img-bg"] {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.img-bg-cover {
+	background-size: cover;
+}
+
+.img-bg-contain {
+	background-size: contain;
+}
+
+.video {
+	overflow: hidden;
+	height: 100vh;
+
+	video {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate3d(-50%, -50%, 0);
+		min-width: 100%;
+		min-height: 100%;
+	}
+}
+
+.mf {
+	color: $main;
+	text-shadow: -1px 0 $border, 0 1px $border, 1px 0 $border, 0 -1px $border, -1px 1px $border, 1px 1px $border, 1px -1px $border, -1px -1px $border, 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.b-bg {
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.b-border {
+	box-shadow: 0px 0px 0px 1px rgba(0, 199, 255, .6),
+							0px 0px 0px 1px rgba(80, 227, 194, .6), 
+							inset 0px 0px 10px 0px rgba(80, 227, 194, .7),
+							0px 0px 15px 0px rgba(0, 199, 255, .6),
+}

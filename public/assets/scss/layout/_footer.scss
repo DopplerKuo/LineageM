@@ -1,0 +1,48 @@
+footer {
+	padding: 50px 2.5%;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	background-color: #141414;
+	
+	.left-img, .right-img	{
+		position: absolute;
+		width: 25%;
+		bottom: 0;
+		left: 10%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.right-img {
+		right: 10%;
+		left: auto;
+		width: 18%;
+	}
+
+	.footer-logo {
+		width: 250px;
+		margin: 0 auto 25px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.other-logo {
+		display: block;
+		margin: 10px auto 20px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	p {
+		font-family: $p100;
+		font-weight: 100;
+		font-size: 12px;
+	}
+}

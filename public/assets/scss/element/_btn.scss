@@ -1,0 +1,29 @@
+[class*='btn'] {
+	cursor: pointer;
+	user-select: none;
+  text-align: center;  
+}
+
+.cf-bg-btn, .red-bg-btn {
+	background-image: url('../img/main/btn_decide.png');
+	transition: .2s ease;
+
+	input {
+		background-color: transparent;
+		color: #fff;
+		width: 130px;
+		flex: 0 0 auto;
+		font-size: 13px;
+		letter-spacing: 1px;
+		line-height: 25px;
+		cursor: pointer;
+	}
+}
+
+.cf-bg-btn {
+	background-image: url('../img/main/btn_confirm.png');
+}
+
+.cf-bg-btn:hover, .red-bg-btn:hover {
+	box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, .3);
+}

@@ -1,0 +1,28 @@
+.sec1 {
+	
+	& > .bg {
+		background-image: url('../img/main/1-bg.jpg');
+	}
+
+	.logo {
+		position: absolute;
+		z-index: 1;
+		left: 5%;
+		top: 50px;
+
+		img {
+			width: 250px;
+			vertical-align: middle;
+		}
+
+		h2 {
+			font-size: 14px;
+			font-family: $p100;
+			font-weight: 100;
+			letter-spacing: 2px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 10px;
+		}
+	}
+}

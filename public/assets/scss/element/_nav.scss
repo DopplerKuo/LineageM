@@ -1,0 +1,30 @@
+#nav, #go-top {
+	position: fixed;
+}
+
+#nav {
+	z-index: 10;
+	left: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+
+	a {
+		display: block;
+		font-size: 13px;
+		font-family: $p100;
+		font-weight: 100;
+		margin: 10px 0;
+		opacity: .5;
+		transition: .3s ease;
+
+		&:before {
+			content: '◆';
+			margin-right: 10px;
+			font-size: 12px;
+		}
+	}
+
+	a.active, a:hover {
+		opacity: 1;
+	}
+}
