@@ -1,9 +1,17 @@
 $(document).ready(function() {
+
+	// 英雄留言尋人榜的留言輪播
 	$('#s3-slider').unslider({
-		nav: function(index, label) {
-			// $('.s3-search-result-page-number .now').text(label)
-		},
+		nav: false,
 		autoplay: true,
 		animation: 'vertical',
 	})
+
+	// menu
+	$('.menu-btn').click(function() {
+		$('#mobile-nav').toggleClass('active')
+	})
+
+
+
 })
