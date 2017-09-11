@@ -10,41 +10,233 @@
   <meta content="" property="og:title">
   <meta content="" property="og:site_name">
   <meta content="" property="og:description">
-  <meta content="" property="og:image">
-  <link href="" rel="shortcut icon">
+  <meta content="/assets/img/common/fbshare.png" property="og:image">
+  <link href="/assets/img/common/favicon.jpg" rel="shortcut icon">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <script src="/assets/js/vendor/font.js"></script>
 <body>
 
-  <div id="go-top">
-    TOP
+  <div id="loading">
+    <div class="content">
+      <div class="logo">
+        <img src="/assets/img/main/footer-logo.png" alt="">
+      </div>
+      <div class="loading-pt">
+        <b>0</b>%
+      </div>
+    </div>
   </div>
 
-  <nav id="mobile-nav">
-    <div class="menu-btn">
-      <div class="icon"></div>
-    </div>
-    <div class="content">
-      <a class="mf" href="javascript:;">首頁</a>
-      <a class="mf" href="javascript:;">回憶夥伴</a>
-      <a class="mf" href="javascript:;">留言板</a>
-      <a class="mf" href="javascript:;">集資目標</a>
-      <a class="mf" href="javascript:;">活動說明</a>
-    </div>
-  </nav>
+  <!-- 返回頂部 -->
+  <div id="go-top" data-anchor="sec1" class="cf-bg-btn img-bg-cover">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+    TOP
+  </div>
+  <!-- 返回頂部 END-->
 
-  <nav id="nav">
-    <a class="mf" href="javascript:;">首頁</a>
-    <a class="mf" href="javascript:;">回憶夥伴</a>
-    <a class="mf" href="javascript:;">留言板</a>
-    <a class="mf" href="javascript:;">集資目標</a>
-    <a class="mf" href="javascript:;">活動說明</a>
+  <!-- 手機版 nav -->
+  <nav id="mobile-nav">
+    <div class="menu-btn"></div>
+    <div class="content">
+      <a data-anchor="sec1" class="mf" href="javascript:;">首頁</a>
+      <a data-anchor="sec2" class="mf" href="javascript:;">回憶夥伴</a>
+      <a data-anchor="sec3" class="mf" href="javascript:;">留言板</a>
+      <a data-anchor="sec4" class="mf" href="javascript:;">集資目標</a>
+      <a data-anchor="sec5" class="mf" href="javascript:;">活動說明</a>
+    </div>
   </nav>
+  <!-- 手機版 nav END-->
+
+  <!-- 桌機版 nav -->
+  <nav id="nav">
+    <a data-anchor="sec1" class="mf" href="javascript:;">首頁</a>
+    <a data-anchor="sec2" class="mf" href="javascript:;">回憶夥伴</a>
+    <a data-anchor="sec3" class="mf" href="javascript:;">留言板</a>
+    <a data-anchor="sec4" class="mf" href="javascript:;">集資目標</a>
+    <a data-anchor="sec5" class="mf" href="javascript:;">活動說明</a>
+  </nav>
+  <!-- 桌機版 nav END-->
+
+  <!-- section 3 英雄尋人留言板中每個留言的看更多 -->
+  <div id="pop-up">
+    <div class="close"></div>
+    <div class="content b-bg">
+      <div class="close">X</div>
+      <div class="msg-box">
+        <div class="title">
+          我是
+          <b class="msg-server">光明之神</b>
+          的
+          <b class="msg-username">Andy05511</b>
+          我想找
+          <b class="msg-class">女法師</b>
+          <b>Bobo1742</b>
+        </div>
+        <div class="said">
+          婆，還記得我們當年的約定嗎，自從你去當兵之後就再也沒聯繫上你過了，不曉得你還記不記得我，也不曉得你會不會再來天堂 M 回憶我們的當初。愛你的％％絕神煞星％％
+        </div>
+        <div class="facebook-board"></div>
+        <div class="switch-page">
+          <div class="mas-prev cf-bg-btn">上一則</div>
+          <div class="mas-next cf-bg-btn">下一則</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section 3 英雄尋人留言板中每個留言的看更多 END-->
+
+  <!-- section 5 活動說明的表單填寫 -->
+  <div id="find-friend-form">
+    <div class="content b-bg">
+      <div class="title">
+        找朋友？快填寫
+        <div class="close">X</div>
+      </div>
+      <form action="">
+        <div class="input-group">
+          <label for="">
+            我的角色 ID (必填)
+          </label>
+          <input type="text" placeholder="例如：爸爸請不要">
+        </div>
+        <div class="input-group" id="s5-server-select-group">
+          <label for="">
+            我要找的夥伴所在的伺服器 (選填)
+          </label>
+          <select name="" id="s5-server-select">
+            <option value="太陽神">太陽神</option>
+            <option value="愛神">愛神</option>
+            <option value="勝利女神">勝利女神</option>
+            <option value="美神">美神</option>
+            <option value="天神">天神</option>
+            <option value="天后">天后</option>
+            <option value="戰神">戰神</option>
+            <option value="月亮女神">月亮女神</option>
+            <option value="海神">海神</option>
+            <option value="冥王">冥王</option>
+            <option value="火神">火神</option>
+            <option value="收穫女神">收穫女神</option>
+            <option value="蛇髮女">蛇髮女</option>
+            <option value="半人馬">半人馬</option>
+            <option value="牛人">牛人</option>
+            <option value="地獄犬">地獄犬</option>
+            <option value="獨眼巨人">獨眼巨人</option>
+            <option value="獅子">獅子</option>
+            <option value="飛馬">飛馬</option>
+            <option value="水蛇">水蛇</option>
+            <option value="公牛">公牛</option>
+            <option value="女妖">女妖</option>
+            <option value="巨龍">巨龍</option>
+            <option value="百眼怪">百眼怪</option>
+            <option value="大地之神">大地之神</option>
+            <option value="天使">天使</option>
+            <option value="泰坦女神">泰坦女神</option>
+            <option value="白晝女神">白晝女神</option>
+            <option value="冥后">冥后</option>
+            <option value="青春女神">青春女神</option>
+            <option value="夜精靈">夜精靈</option>
+            <option value="英雄">英雄</option>
+            <option value="神使">神使</option>
+            <option value="酒神">酒神</option>
+            <option value="命運女神">命運女神</option>
+            <option value="夜神">夜神</option>
+            <option value="海洋女神">海洋女神</option>
+            <option value="彩虹女神">彩虹女神</option>
+            <option value="金牛座">金牛座</option>
+            <option value="雙子座">雙子座</option>
+            <option value="光明之神">光明之神</option>
+            <option value="雷神">雷神</option>
+            <option value="時光女神">時光女神</option>
+            <option value="百臂巨人">百臂巨人</option>
+            <option value="風暴之神">風暴之神</option>
+            <option value="飆風">飆風</option>
+            <option value="死亡騎士">死亡騎士</option>
+            <option value="狂暴將軍">狂暴將軍</option>
+            <option value="炎魔">炎魔</option>
+            <option value="死鬥">死鬥</option>
+            <option value="激鬥">激鬥</option>
+            <option value="力量之神">力量之神</option>
+            <option value="死亡之神">死亡之神</option>
+            <option value="黎明女神">黎明女神</option>
+            <option value="戰爭之神">戰爭之神</option>
+            <option value="叛軍伺服器">叛軍伺服器</option>
+            <option value="法師服">法師服</option>
+            <option value="體驗">體驗</option>
+            <option value="吉爾塔斯">吉爾塔斯</option>
+            <option value="安塔瑞斯">安塔瑞斯</option>
+            <option value="法利昂">法利昂</option>
+            <option value="林德拜爾">林德拜爾</option>
+            <option value="巴拉卡斯">巴拉卡斯</option>
+            <option value="殷海薩">殷海薩</option>
+            <option value="格蘭肯">格蘭肯</option>
+            <option value="伊娃">伊娃</option>
+            <option value="席琳">席琳</option>
+            <option value="甘特">甘特</option>
+            <option value="布魯迪卡">布魯迪卡</option>
+            <option value="絲莉安">絲莉安</option>
+            <option value="丹特斯">丹特斯</option>
+            <option value="反王肯恩">反王肯恩</option>
+            <option value="賽尼斯">賽尼斯</option>
+            <option value="卡士柏">卡士柏</option>
+            <option value="巴土瑟">巴土瑟</option>
+            <option value="西瑪">西瑪</option>
+            <option value="馬庫爾">馬庫爾</option>
+            <option value="歐林">歐林</option>
+            <option value="巴蘭卡">巴蘭卡</option>
+            <option value="紅騎士">紅騎士</option>
+            <option value="叛軍伺服器">叛軍伺服器</option>
+            <option value="法師服">法師服</option>
+            <option value="巴風特">巴風特</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="">
+            我要找夥伴的 ID (選填)
+          </label>
+          <input type="text" placeholder="例如：媽我回來了">
+        </div>
+        <div class="input-group">
+          <label for="">
+            我要找夥伴的職業 (選填)
+          </label>
+          <select name="" id="">
+            <option value="">王族</option>
+            <option value="">騎士</option>
+            <option value="">妖精</option>
+            <option value="">法師</option>
+            <option value="">黑暗精靈</option>
+            <option value="">龍騎士</option>
+            <option value="">幻術士</option>
+            <option value="">戰士</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="">
+            血盟 (選填)
+          </label>
+          <input type="text" placeholder="例如：快把那個飛刀">
+        </div>
+        <div class="input-group">
+          <label for="">
+            我們一起做的事，或想說的話 (必填)
+          </label>
+          <textarea name="" id="" cols="30" rows="10" placeholder="例如：還記得我嗎？什麼大聲點聽不見"></textarea>
+        </div>
+        <input type="submit" value="確認送出" class="red-bg-btn">
+      </form>
+    </div>
+  </div>
+  <!-- section 5 活動說明的表單填寫 END-->
 
   <header class="sec1">
-    <div class="bg img-bg-cover"></div>
+    <div class="bg s1-video img-bg-cover">
+      <video loop autoplay>
+        <source src="/assets/img/main/header-video.mp4" type="video/mp4">
+      </video>
+      <img class="m" src="/assets/img/main/header-bg-m.png" alt="">
+    </div>
     <div class="logo">
       <img src="/assets/img/main/logo.png" alt="">
       <h2 class="mf">夥伴召集令</h2>
@@ -60,7 +252,7 @@
       <div class="video b-bg b-border">
         <div class="mf video-title">還記得一起攻城的夥伴嗎</div>
         <div class="iframe-box">
-          <iframe src="https://player.vimeo.com/video/222826119" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/U5jMa8BBBDs" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>
       <div class="flex-l3-s1-">
@@ -91,8 +283,12 @@
       <div class="s3-title img-bg-contain mf">熱門排行榜</div>
 
       <div class="s3-rank b-bg">
-        <h3 class="mf">最多留言</h3>
-        <div class="flex-l3-m1-">
+        <div class="s3-rank-m-tab">
+          <div class="mf active" data-tab="1">最多留言</div>
+          <div class="mf" data-tab="2">最多瀏覽</div>
+        </div>
+        <h3 class="mf d-tab">最多留言</h3>
+        <div class="flex-l3-m1- s3-rank-list active" data-tab="1">
           <div class="s3-name-item mf">
             <span>第一名</span>
             <b class="b-border">aabbccddee1122334455</b>
@@ -106,8 +302,8 @@
             <b class="b-border">aabbccdde5e5e5e5e5e5e5e5e5</b>
           </div>
         </div>
-        <h3 class="mf">最多瀏覽</h3>
-        <div class="flex-l3-m1-">
+        <h3 class="mf d-tab">最多瀏覽</h3>
+        <div class="flex-l3-m1- s3-rank-list" data-tab="2">
           <div class="s3-name-item mf">
             <span>第一名</span>
             <b class="b-border">aabbccddee1122334455</b>
@@ -125,24 +321,194 @@
 
       <div class="s3-search">
 
+        <div id="server-list" class="flex-l5-m2-jfs-">
+          <div class="close">x</div>
+          <div>太陽神</div>
+          <div>愛神</div>
+          <div>勝利女神</div>
+          <div>美神</div>
+          <div>天神</div>
+          <div>天后</div>
+          <div>戰神</div>
+          <div>月亮女神</div>
+          <div>海神</div>
+          <div>冥王</div>
+          <div>火神</div>
+          <div>收穫女神</div>
+          <div>蛇髮女</div>
+          <div>半人馬</div>
+          <div>牛人</div>
+          <div>地獄犬</div>
+          <div>獨眼巨人</div>
+          <div>獅子</div>
+          <div>飛馬</div>
+          <div>水蛇</div>
+          <div>公牛</div>
+          <div>女妖</div>
+          <div>巨龍</div>
+          <div>百眼怪</div>
+          <div>大地之神</div>
+          <div>天使</div>
+          <div>泰坦女神</div>
+          <div>白晝女神</div>
+          <div>冥后</div>
+          <div>青春女神</div>
+          <div>夜精靈</div>
+          <div>英雄</div>
+          <div>神使</div>
+          <div>酒神</div>
+          <div>命運女神</div>
+          <div>夜神</div>
+          <div>海洋女神</div>
+          <div>彩虹女神</div>
+          <div>金牛座</div>
+          <div>雙子座</div>
+          <div>光明之神</div>
+          <div>雷神</div>
+          <div>時光女神</div>
+          <div>百臂巨人</div>
+          <div>風暴之神</div>
+          <div>飆風</div>
+          <div>死亡騎士</div>
+          <div>狂暴將軍</div>
+          <div>炎魔</div>
+          <div>死鬥</div>
+          <div>激鬥</div>
+          <div>力量之神</div>
+          <div>死亡之神</div>
+          <div>黎明女神</div>
+          <div>戰爭之神</div>
+          <div>叛軍伺服器</div>
+          <div>法師服</div>
+          <div>體驗</div>
+          <div>吉爾塔斯</div>
+          <div>安塔瑞斯</div>
+          <div>法利昂</div>
+          <div>林德拜爾</div>
+          <div>巴拉卡斯</div>
+          <div>殷海薩</div>
+          <div>格蘭肯</div>
+          <div>伊娃</div>
+          <div>席琳</div>
+          <div>甘特</div>
+          <div>布魯迪卡</div>
+          <div>絲莉安</div>
+          <div>丹特斯</div>
+          <div>反王肯恩</div>
+          <div>賽尼斯</div>
+          <div>卡士柏</div>
+          <div>巴土瑟</div>
+          <div>西瑪</div>
+          <div>馬庫爾</div>
+          <div>歐林</div>
+          <div>巴蘭卡</div>
+          <div>紅騎士</div>
+          <div>叛軍伺服器</div>
+          <div>法師服</div>
+          <div>巴風特</div>
+        </div>
+
         <form action="" class="s3-search-bar mf">
-          <div class="select-group">
+          <div class="select-group" id="s3-server-select-group">
             <label for="">伺服器</label>
-            <select name="" id="">
-              <option value="">光明之神</option>
-              <option value="">光明之神</option>
-              <option value="">光明之神</option>
-              <option value="">光明之神</option>
+            <select name="" id="s3-server-select">
+              <option value="太陽神">太陽神</option>
+              <option value="愛神">愛神</option>
+              <option value="勝利女神">勝利女神</option>
+              <option value="美神">美神</option>
+              <option value="天神">天神</option>
+              <option value="天后">天后</option>
+              <option value="戰神">戰神</option>
+              <option value="月亮女神">月亮女神</option>
+              <option value="海神">海神</option>
+              <option value="冥王">冥王</option>
+              <option value="火神">火神</option>
+              <option value="收穫女神">收穫女神</option>
+              <option value="蛇髮女">蛇髮女</option>
+              <option value="半人馬">半人馬</option>
+              <option value="牛人">牛人</option>
+              <option value="地獄犬">地獄犬</option>
+              <option value="獨眼巨人">獨眼巨人</option>
+              <option value="獅子">獅子</option>
+              <option value="飛馬">飛馬</option>
+              <option value="水蛇">水蛇</option>
+              <option value="公牛">公牛</option>
+              <option value="女妖">女妖</option>
+              <option value="巨龍">巨龍</option>
+              <option value="百眼怪">百眼怪</option>
+              <option value="大地之神">大地之神</option>
+              <option value="天使">天使</option>
+              <option value="泰坦女神">泰坦女神</option>
+              <option value="白晝女神">白晝女神</option>
+              <option value="冥后">冥后</option>
+              <option value="青春女神">青春女神</option>
+              <option value="夜精靈">夜精靈</option>
+              <option value="英雄">英雄</option>
+              <option value="神使">神使</option>
+              <option value="酒神">酒神</option>
+              <option value="命運女神">命運女神</option>
+              <option value="夜神">夜神</option>
+              <option value="海洋女神">海洋女神</option>
+              <option value="彩虹女神">彩虹女神</option>
+              <option value="金牛座">金牛座</option>
+              <option value="雙子座">雙子座</option>
+              <option value="光明之神">光明之神</option>
+              <option value="雷神">雷神</option>
+              <option value="時光女神">時光女神</option>
+              <option value="百臂巨人">百臂巨人</option>
+              <option value="風暴之神">風暴之神</option>
+              <option value="飆風">飆風</option>
+              <option value="死亡騎士">死亡騎士</option>
+              <option value="狂暴將軍">狂暴將軍</option>
+              <option value="炎魔">炎魔</option>
+              <option value="死鬥">死鬥</option>
+              <option value="激鬥">激鬥</option>
+              <option value="力量之神">力量之神</option>
+              <option value="死亡之神">死亡之神</option>
+              <option value="黎明女神">黎明女神</option>
+              <option value="戰爭之神">戰爭之神</option>
+              <option value="叛軍伺服器">叛軍伺服器</option>
+              <option value="法師服">法師服</option>
+              <option value="體驗">體驗</option>
+              <option value="吉爾塔斯">吉爾塔斯</option>
+              <option value="安塔瑞斯">安塔瑞斯</option>
+              <option value="法利昂">法利昂</option>
+              <option value="林德拜爾">林德拜爾</option>
+              <option value="巴拉卡斯">巴拉卡斯</option>
+              <option value="殷海薩">殷海薩</option>
+              <option value="格蘭肯">格蘭肯</option>
+              <option value="伊娃">伊娃</option>
+              <option value="席琳">席琳</option>
+              <option value="甘特">甘特</option>
+              <option value="布魯迪卡">布魯迪卡</option>
+              <option value="絲莉安">絲莉安</option>
+              <option value="丹特斯">丹特斯</option>
+              <option value="反王肯恩">反王肯恩</option>
+              <option value="賽尼斯">賽尼斯</option>
+              <option value="卡士柏">卡士柏</option>
+              <option value="巴土瑟">巴土瑟</option>
+              <option value="西瑪">西瑪</option>
+              <option value="馬庫爾">馬庫爾</option>
+              <option value="歐林">歐林</option>
+              <option value="巴蘭卡">巴蘭卡</option>
+              <option value="紅騎士">紅騎士</option>
+              <option value="叛軍伺服器">叛軍伺服器</option>
+              <option value="法師服">法師服</option>
+              <option value="巴風特">巴風特</option>
             </select>
             <div class="fake-arrow"></div>
           </div>
           <div class="select-group">
             <label for="">職業</label>
             <select name="" id="">
+              <option value="">王族</option>
               <option value="">騎士</option>
-              <option value="">騎士</option>
-              <option value="">騎士</option>
-              <option value="">騎士</option>
+              <option value="">妖精</option>
+              <option value="">法師</option>
+              <option value="">黑暗精靈</option>
+              <option value="">龍騎士</option>
+              <option value="">幻術士</option>
+              <option value="">戰士</option>
             </select>
             <div class="fake-arrow"></div>
           </div>
@@ -362,17 +728,19 @@
       <h2 class="mf">力量集氣</h2>
       <div id="energy-bar">
         <div class="bar-bg b-border"></div>
+        <!-- bar-main 的 width 來控制進度條 -->
         <div class="bar-main" style="width: 50%"></div>
         <div class="bar-scale flex-l6-">
-          <span class="mf">0</span>
-          <span class="mf step1">100,000</span>
-          <span class="mf">200,000</span>
-          <span class="mf step2">300,000</span>
-          <span class="mf">400,000</span>
-          <span class="mf step3">500,000</span>
+          <span class="mf">0<b>0</b></span>
+          <span class="mf step1">100,000<b>100k</b></span>
+          <span class="mf">200,000<b>200k</b></span>
+          <span class="mf step2">300,000<b>300k</b></span>
+          <span class="mf">400,000<b>400k</b></span>
+          <span class="mf step3">500,000<b>500k</b></span>
         </div>
       </div>
-      <div class="flex-l3-m1">
+      <div class="flex-l3-m1-">
+        <!-- 當集氣到 10000 個時 .s4-box 加 .active -->
         <div class="s4-box b-border b-bg active">
           <h3 class="mf">募集到</h3>
           <h4 class="mf">100,000 <span>力量</span></h4>
@@ -382,6 +750,7 @@
             <img src="/assets/img/main/4-check.png" alt="">
           </div>
         </div>
+        <!-- 當集氣到 30000 個時 .s4-box 加 .active -->
         <div class="s4-box b-border b-bg active">
           <h3 class="mf">募集到</h3>
           <h4 class="mf">300,000 <span>力量</span></h4>
@@ -391,6 +760,7 @@
             <img src="/assets/img/main/4-check.png" alt="">
           </div>
         </div>
+        <!-- 當集氣到 50000 個時 .s4-box 加 .active -->
         <div class="s4-box b-border b-bg">
           <h3 class="mf">募集到</h3>
           <h4 class="mf">500,000 <span>力量</span></h4>
@@ -443,7 +813,7 @@
           <h3 class="mf">我也要找昔日天堂夥伴</h3>
           <img src="/assets/img/main/5-3.jpg" alt="">
           <p>輸入尋人資訊注入 500 個集氣力量</p>
-          <div class="cf-bg-btn">我也要找</div>
+          <div class="cf-bg-btn" id="find-friend-btn">我也要找</div>
         </div>
       </div>
     </div>
@@ -482,4 +852,15 @@
 <script src="/assets/js/animateNumber.js"></script>
 <script src="/assets/js/aboutScroll.js"></script>
 <script src="/assets/js/index.js"></script>
+<script>
+  // 手機版不要有影片
+  $(document).ready(function() {
+    var w = $(window).width()
+    if ( w <= 992 ) {
+      $('.s1-video video source').attr('src', '')
+      $('.s1-video video').attr('autoplay', false)
+    }
+  })
+</script>
+
 </html>

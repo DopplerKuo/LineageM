@@ -1,5 +1,21 @@
 .sec5 {
 
+	& > .bg {
+		background-attachment: fixed;
+
+		img {
+			width: 40%;
+			right: 0;
+			left: auto;
+			position: absolute;
+			bottom: 0;
+		}
+		
+		@media screen and (max-width: 992px) {
+			background-attachment: scroll;			
+		}
+	}
+
 	.content > p {
 		color: #fff;
 		max-width: 700px;
@@ -28,6 +44,21 @@
 			display: flex;
 			justify-content: flex-start;
 			align-items: flex-start;
+		}
+
+		.list:nth-child(3) {
+			@media screen and (max-width: 768px) {
+				display: block;
+
+				b {
+					display: block;
+				}
+
+				span {
+					display: block;
+					padding-left: 25px;
+				}
+			}
 		}
 
 		b {
@@ -74,5 +105,115 @@
 			max-width: 150px;
 			margin: auto;
 		}
+	}
+}
+
+#find-friend-form {
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 30;
+	overflow: auto;
+
+	.content {
+		background-color: rgba(0, 0, 0, .9);
+		position: relative;
+		max-width: 650px;
+		width: 100%;
+		margin: 30px auto;
+		color: #fff;
+		box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
+
+		.title {
+			background-color: #FF5151;
+			line-height: 30px;
+			padding-left: 15px;
+
+			.close {
+				cursor: pointer;
+				position: absolute;
+				width: 30px;
+				line-height: 30px;
+				height: 30px;
+				right: 0;
+				top: 0;
+				text-align: center;
+			}
+		}
+	}
+
+	form {
+		padding: 20px 15px;
+	}
+
+	.input-group {
+		margin-bottom: 20px;
+
+		label {
+			display: block;
+		}
+
+		label:before {
+			content: '';
+			width: 10px;
+			height: 10px;
+			background-color: #FF5151;
+			display: inline-block;
+			margin-right: 5px;
+		}
+
+		select, textarea, input {
+			display: block;
+			box-shadow: inset 0 0 10px 2px rgba(255, 255, 255, .2);
+			background-color: rgba(255, 255, 255, .2);
+			width: 100%;
+			line-height: 35px;
+			margin-top: 5px;
+			padding-left: 10px;
+			color: #fff;
+		}
+
+		textarea {
+			height: 150px;
+			line-height: 1.5;
+			padding-top: 5px;
+		}
+
+		textarea, input::-webkit-input-placeholder { 
+		  color: #fff;
+		  font-family: $p200;
+		  font-weight: 200;
+		  opacity: .7;
+		}
+		textarea, input::-moz-placeholder { 
+		  color: #fff;
+		  font-family: $p200;
+		  font-weight: 200;
+		  opacity: .7;
+		}
+		textarea, input:-ms-input-placeholder {
+		  color: #fff;
+		  font-family: $p200;
+		  font-weight: 200;
+		  opacity: .7;
+		}
+		textarea, input:-moz-placeholder {
+		  color: #fff;
+		  font-family: $p200;
+		  font-weight: 200;
+		  opacity: .7;
+		}
+	}
+
+	input[type="submit"] {
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: #fff;
+		line-height: 30px;
+		height: 30px;
 	}
 }

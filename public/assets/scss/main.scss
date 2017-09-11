@@ -109,3 +109,33 @@ section, header {
 							inset 0px 0px 10px 0px rgba(80, 227, 194, .7),
 							0px 0px 15px 0px rgba(0, 199, 255, .6),
 }
+
+#loading {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: #222528;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.content {
+		color: #fff;
+		text-align: center;
+
+		.logo {
+			img {
+				width: 240px;
+			}
+		}
+
+		.loading-pt {
+				opacity: .5;
+				font-size: 12px;
+				margin-top: 40px;
+			}
+	}
+}

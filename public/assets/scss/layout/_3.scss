@@ -2,6 +2,10 @@ h2 {
 	font-size: 44px;
 	letter-spacing: 2px;
 	text-align: center;
+
+	@media screen and (max-width: 768px) {
+		font-size: 22px;			
+	}
 }
 
 .sec3 {
@@ -12,6 +16,11 @@ h2 {
 
 	& > .bg {
 		background-position: 50% 100%;
+		background-attachment: fixed;
+		
+		@media screen and (max-width: 992px) {
+			background-attachment: scroll;			
+		}
 
 		img {
 			position: absolute;
@@ -29,6 +38,37 @@ h2 {
 		letter-spacing: 1px;
 	}
 
+	.d-tab {
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	.s3-rank-m-tab {
+		display: none;
+		font-size: 0;
+		@media screen and (max-width: 768px) {
+			display: block;
+		}
+
+		div {
+			display: inline-block;
+			font-size: 14px;
+			width: 50%;
+			text-align: center;
+			line-height: 40px;
+			height: 40px;
+			cursor: pointer;
+			background-color: rgba(255, 255, 255, .5);
+			opacity: .5;
+
+			&.active {
+				background-color: rgba(0, 0, 0, .5);
+				opacity: 1;
+			}
+		}
+	}
+
 	.s3-title {
 		text-align: center;
 		background-image: url('../img/main/3-title.png');
@@ -36,11 +76,30 @@ h2 {
 		font-size: 20px;
 		letter-spacing: 2px;
 		margin: 10px auto;
+
+		@media screen and (max-width: 768px) {
+			font-size: 15px;
+		}
 	}
 
 	.s3-rank {
 		padding: 14px 20px;
 		color: #fff;
+
+		@media screen and (max-width: 768px) {
+			padding: 0;
+		}
+	}
+
+	.s3-rank-list {
+		@media screen and (max-width: 768px) {
+			display: none;
+			padding: 10px 20px;
+
+			&.active {
+				display: block;
+			}
+		}
 	}
 
 	.s3-name-item {
@@ -70,9 +129,28 @@ h2 {
 		padding: 0 10px;
 		margin: 30px auto 20px;
 		justify-content: space-between;
+		
+		@media screen and (max-width: 768px) {
+			display: block;
+			
+			.input-group, .select-group {
+				margin: 7px 0;
+		    margin-right: 0px!important;
+
+		    select {
+		    	min-width: calc( 100% - 70px );
+		    }
+
+		    input {
+		    	line-height: 27px;
+		    	height: 27px;
+		    }
+			}
+		}
 
 		.input-group.f1 {
 			flex: 1 1 auto;
+			width: auto;
 			display: flex;
 			margin-right: 20px;
 
@@ -92,7 +170,7 @@ h2 {
 
 		.select-group {
 			position: relative;
-			margin-right: 20px;
+			margin-right: 10px;
 		}
 
 		label {
@@ -104,7 +182,7 @@ h2 {
 		select {
 			background-color: rgba(255, 255, 255, .3);
 			color: #fff;
-			padding: 5px 15px;
+			padding: 5px 10px;
 			line-height: 1;
 			padding-right: 40px;
 			border-radius: 0;
@@ -191,6 +269,28 @@ h2 {
 			letter-spacing: 1px;
 			line-height: 25px;
 		}
+
+		@media screen and (max-width: 768px) {
+			overflow-x: auto;
+			justify-content: flex-start;
+
+			.im, .s {
+				flex: 0 0 40px;
+				width: 40px;
+				font-size: 12px;
+			}
+
+			.player-account, .server-name {
+				width: 80px;
+				flex: 0 0 80px;
+				text-align: left;
+			}
+
+			.player-said {
+				flex: 0 0 100px;
+				width: 100px;
+			}
+		}
 	}
 
 	.s3-search-result-page-number {
@@ -206,5 +306,132 @@ h2 {
 		opacity: .8;
 		margin: 30px auto;
 		letter-spacing: 4px;
+	}
+}
+
+#pop-up {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 30;
+
+	& > .close {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, .5);
+	}
+
+	.content {
+		position: relative;
+		max-width: 650px;
+		width: 100%;
+		margin: 50px auto 0;
+		color: #fff;
+		padding: 30px 5%;
+		box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
+
+		.close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30px;
+			text-align: center;
+			line-height: 30px;
+			height: 30px;
+			font-size: 15px;
+			cursor: pointer;
+		}
+
+		.title {
+			margin-bottom: 20px;
+
+			b {
+				margin: 0 10px;
+			}
+		}
+
+		.said {
+			background-color: rgba(255, 255, 255, .2);
+			padding: 10px;
+			font-size: 15px;
+			line-height: 1.5;
+			margin-bottom: 15px;
+		}
+
+		.switch-page {
+			margin-top: 15px;
+			text-align: center;
+			font-size: 0;
+
+			div {
+				display: inline-block;
+				width: 100px;
+				line-height: 25px;
+				height: 25px;
+				margin: 0 10px;
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+#server-list.active {
+	display: block;
+}
+
+#server-list {
+	display: none;
+	padding: 50px 10px 20px;
+	position: fixed;
+	max-width: 800px;
+	width: 100%;
+	right: 0;
+	margin: auto;
+	top: 5%;
+	left: 0;
+	width: 100%;
+	height: 90vh;
+	z-index: 30;
+	text-align: center;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, .7);
+
+	.close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: $main;
+		margin: 0;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		background-color: #FF5151;
+	}
+
+	div {
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 1);
+		color: #fff;
+		font-size: 15px;
+		line-height: 30px;
+		margin-top: 0px;
+		height: 30px;
+		cursor: pointer;
+	}
+
+	div:hover {
+		background-color: rgba(255, 255, 255, 1);
+		color: #000;
+	}
+}
+
+#s3-server-select-group, #s5-server-select-group {
+	* {
+		pointer-events: none;
 	}
 }
