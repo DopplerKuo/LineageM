@@ -232,9 +232,14 @@
 
   <header class="sec1">
     <div class="bg s1-video img-bg-cover">
-      <!-- <video loop autoplay>
-        <source src="/assets/img/main/header-video.mp4" type="video/mp4">
-      </video> -->
+      <div id="header-slider">
+        <ul>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+          <li><img src="" alt=""></li>
+        </ul>
+      </div>
       <img class="m" src="/assets/img/main/header-bg-m.png" alt="">
     </div>
     <div class="logo">
@@ -852,15 +857,5 @@
 <script src="/assets/js/animateNumber.js"></script>
 <script src="/assets/js/aboutScroll.js"></script>
 <script src="/assets/js/index.js"></script>
-<script>
-  // 手機版不要有影片
-  $(document).ready(function() {
-    var w = $(window).width()
-    if ( w <= 992 ) {
-      $('.s1-video video source').attr('src', '')
-      $('.s1-video video').attr('autoplay', false)
-    }
-  })
-</script>
 
 </html>
