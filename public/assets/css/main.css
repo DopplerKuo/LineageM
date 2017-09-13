@@ -623,6 +623,7 @@ a {
     margin-left: 10px; }
 
 #header-slider {
+  pointer-events: none;
   position: absolute;
   text-align: center;
   left: 8%;
