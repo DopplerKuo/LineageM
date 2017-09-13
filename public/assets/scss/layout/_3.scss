@@ -169,17 +169,24 @@ h2 {
 		}
 
 		.select-group {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			position: relative;
-			margin-right: 10px;
+			margin-right: 8px;
 		}
 
 		label {
+			width: auto;
+			flex: 0 0 auto;
 			font-family: $p200;
 			font-weight: 200;
-			margin-right: 10px;
+			margin-right: 8px;
 		}
 
 		select {
+			width: auto;
+			flex: 1 1 auto;
 			background-color: rgba(255, 255, 255, .3);
 			color: #fff;
 			padding: 5px 10px;
