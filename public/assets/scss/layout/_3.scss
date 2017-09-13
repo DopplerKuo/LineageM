@@ -435,3 +435,35 @@ h2 {
 		pointer-events: none;
 	}
 }
+
+
+.sec3 {
+
+	.unslider {
+		text-align: center;
+	}
+
+	.unslider-arrow {
+		position: relative;
+		margin: 10px 5px;
+		font-size: 0;
+		display: inline-block;
+		left: auto;
+		right: auto;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 15px 12px 0 12px;
+		border-color: $main transparent transparent transparent;
+		opacity: .6;
+		cursor: pointer;
+	}
+
+	.unslider-arrow.prev {
+		transform: rotate(180deg);
+	}
+
+	.unslider-arrow:hover {
+		opacity: 1;
+	}
+}
