@@ -18,6 +18,15 @@
 @import 'layout/6';
 @import 'layout/footer';
 
+@font-face {
+	font-family: FolkPro;
+	src: url('../fonts/FolkPro-Regular.otf') format("truetype");
+}
+
+.folk-font {
+	font-family: FolkPro!important;
+}
+
 * {
 	-webkit-overflow-scrolling: touch;
 }
