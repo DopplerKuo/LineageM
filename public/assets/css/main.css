@@ -622,6 +622,25 @@ a {
     vertical-align: middle;
     margin-left: 10px; }
 
+#header-slider {
+  position: absolute;
+  text-align: center;
+  left: 8%;
+  top: calc( 50% - 175px);
+  overflow: visible !important; }
+  @media screen and (max-width: 992px) {
+    #header-slider {
+      left: 0;
+      right: 0;
+      margin: auto; }
+      #header-slider img {
+        height: 350px; } }
+  @media screen and (max-width: 768px) {
+    #header-slider {
+      display: none; } }
+  #header-slider img {
+    height: 350px; }
+
 .sec2 > .bg {
   background-position: 50% 100%;
   background-attachment: fixed; }

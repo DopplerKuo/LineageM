@@ -56,8 +56,28 @@
 }
 
 #header-slider {
-	// position: absolute;
-	// width: 50%;
-	// height: 200px;
-	// background: rgba(0,0,0,.5);
+	position: absolute;
+	text-align: center;
+	left: 8%;
+	top: calc( 50% - 175px );
+	overflow: visible!important;
+
+	@media screen and (max-width: 992px) {
+		left: 0;
+		right: 0;
+		margin: auto;
+
+		img {
+			height: 350px;
+		}
+	}
+
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+
+	img {
+		height: 350px;
+	}
 }

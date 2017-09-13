@@ -14,6 +14,14 @@ $(document).ready(function() {
   	$("#loading").fadeOut(100);
   })
 
+  // 首屏字幕輪播
+  $('#header-slider').unslider({
+  	nav: false,
+  	autoplay: true,
+  	animation: 'fade',
+  	arrows: false,
+  	delay: 5000,
+  })
 
 	// 英雄留言尋人榜的留言輪播
 	$('#s3-slider').unslider({
