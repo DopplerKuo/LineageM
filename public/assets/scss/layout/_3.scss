@@ -446,31 +446,50 @@ h2 {
 
 .sec3 {
 
+	.s3-search-result {
+		position: relative;
+		padding-bottom: 40px;
+	}
+
 	.unslider {
 		text-align: center;
 	}
 
 	.unslider-arrow {
-		position: relative;
-		margin: 10px 5px;
+		position: absolute;
+		bottom: 0px;
+		color: #fff;
+		left: 0;
+		right: 0;
+		margin: auto;
 		font-size: 0;
-		display: inline-block;
-		left: auto;
-		right: auto;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 15px 12px 0 12px;
-		border-color: $main transparent transparent transparent;
-		opacity: .6;
+		width: 100px;
+		line-height: 25px;
+		height: 25px;
+		background-image: url('../img/main/btn_confirm.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top;
 		cursor: pointer;
+
+		&:after {
+			font-size: 13px;	
+		}
+	}
+
+	.unslider-arrow.next {
+		transform: translateX(53px);
+
+		&:after {
+			content: '下一頁';
+		}
 	}
 
 	.unslider-arrow.prev {
-		transform: rotate(180deg);
-	}
+		transform: translateX(-53px);
 
-	.unslider-arrow:hover {
-		opacity: 1;
+		&:after {
+			content: '上一頁';
+		}
 	}
 }

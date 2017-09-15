@@ -1143,31 +1143,45 @@ h2 {
 #s3-server-select-group *, #s5-server-select-group * {
   pointer-events: none; }
 
+.sec3 .s3-search-result {
+  position: relative;
+  padding-bottom: 40px; }
+
 .sec3 .unslider {
   text-align: center; }
 
 .sec3 .unslider-arrow {
-  position: relative;
-  margin: 10px 5px;
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  left: 0;
+  right: 0;
+  margin: auto;
   font-size: 0;
-  display: inline-block;
-  left: auto;
-  right: auto;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 12px 0 12px;
-  border-color: #FFC089 transparent transparent transparent;
-  opacity: .6;
+  width: 100px;
+  line-height: 25px;
+  height: 25px;
+  background-image: url("../img/main/btn_confirm.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
   cursor: pointer; }
+  .sec3 .unslider-arrow:after {
+    font-size: 13px; }
+
+.sec3 .unslider-arrow.next {
+  -webkit-transform: translateX(53px);
+  -ms-transform: translateX(53px);
+  transform: translateX(53px); }
+  .sec3 .unslider-arrow.next:after {
+    content: '下一頁'; }
 
 .sec3 .unslider-arrow.prev {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
-
-.sec3 .unslider-arrow:hover {
-  opacity: 1; }
+  -webkit-transform: translateX(-53px);
+  -ms-transform: translateX(-53px);
+  transform: translateX(-53px); }
+  .sec3 .unslider-arrow.prev:after {
+    content: '上一頁'; }
 
 .sec4 > .bg {
   background-position: 50% 100%;
