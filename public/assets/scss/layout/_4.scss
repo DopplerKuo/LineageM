@@ -197,6 +197,22 @@
 	align-items: center;
 	text-align: center;
 
+	.content {
+		max-width: 870px;
+
+		& > h2 {
+			font-size: 25px;
+
+			@media screen and (max-width: 992px) {
+				font-size: 17px;
+			}
+		}
+
+		.title-img {
+			max-width: 250px;
+		}
+	}
+
 	img.right {
 		left: auto;
 		right: -7%;
@@ -212,6 +228,10 @@
 		font-weight: 200;
 		opacity: .85;
 		margin-bottom: 30px;
+
+		@media screen and (max-width: 992px) {
+			font-size: 13px;
+		}
 	}
 
 	.s4-line {
@@ -225,9 +245,11 @@
 
 	.s4-box {
 		margin-top: 0;
-		padding-bottom: 15px;
+		padding: 15px 6px 10px;
 
 		.active-icon {
+			margin-top: 5px;
+
 			img {
 				width: 50px;
 			}
@@ -235,17 +257,51 @@
 		
 		h4 {
 			color: $main;
+			line-height: 1.2;
+			font-size: 28px;
+			letter-spacing: 3px;
 		}
 
 		h5 {
-			font-size: 20px;
+			font-size: 15px;
+		}
+
+		@media screen and (max-width: 768px) {
+			
+			h4, h3 {
+				display: inline-block;
+			}
+
+			h3 {
+				margin-right: 5px;
+			}
+
+			h4 {
+				letter-spacing: 2px;
+				margin-bottom: 0;
+			}
+
+			h5 {
+				font-size: 18px;
+			}
+
+			.active-icon {
+				top: auto;
+				bottom: -15px;
+				right: -10px;
+
+				img {
+					width: 45px;
+				}
+			}
+
 		}
 	}
 
 	.other-s4-btn {
 		color: #fff;
 		text-shadow: 0 2px 2px rgba(0, 0, 0, 1);
-		width: 310px;
+		width: 290px;
 		line-height: 65px;
 		margin-top: 30px;
 	}
